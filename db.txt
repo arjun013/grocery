@@ -1,0 +1,19 @@
+<div class="text-center text-dark data  second">
+        <form>
+            
+            <h4>Did you buyed anything?</h4>
+            <select name="dropdown" id="drops" class="form-control" onchange="amountUpdate();">
+                
+            </select><br>
+            <div hidden id="amount">
+                <h4>How much did you buy?(<span id="unit"></span>)</h4>
+                <input type="text" id="buyed" class="form-control"> <br>
+                <button type="button" class="btn btn-primary" onclick="updation();" id="sub">UPDATE</button>
+            </div>
+            <div id="history" hidden>
+            <hr>
+            <h2>History of purchase</h2><hr>
+            <ol id="listing" class="text-left lead"></ol>
+            </div>
+        </form>
+    </div>

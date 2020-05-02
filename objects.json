@@ -1,0 +1,82 @@
+[
+{
+    "sno":1,
+    "name":"RICE",
+    "quantity":10,
+    "unit":"kg",
+    "department":"STATIONERY",
+    "notes":"Urgent"
+},
+{
+    "sno":2,
+    "name":"OIL",
+    "quantity":2,
+    "unit":"ltr",
+    "department":"STATIONERY",
+    "notes":"Urgent"
+},
+{
+    "sno":3,
+    "name":"SALT",
+    "quantity":1,
+    "unit":"kg",
+    "department":"STATIONERY",
+    "notes":"Urgent"
+},
+{
+    "sno":4,
+    "name":"SUGAR",
+    "quantity":1,
+    "unit":"kg",
+    "department":"STATIONERY",
+    "notes":"Not Urgent"
+},
+{
+    "sno":5,
+    "name":"ONION",
+    "quantity":1,
+    "unit":"kg",
+    "department":"VEGETABLE",
+    "notes":"Urgent"
+},
+{
+    "sno":6,
+    "name":"POTATO",
+    "quantity":2,
+    "unit":"kg",
+    "department":"VEGETABLE",
+    "notes":"Urgent"
+},
+{
+    "sno":7,
+    "name":"TOMATO",
+    "quantity":1,
+    "unit":"kg",
+    "department":"VEGETABLE",
+    "notes":"Urgent"
+},
+{
+    "sno":8,
+    "name":"FISH",
+    "quantity":1,
+    "unit":"kg",
+    "department":"MEAT",
+    "notes":"Not Urgent"
+},
+{
+    "sno":9,
+    "name":"CHILLY POWDER",
+    "quantity":300,
+    "unit":"gm",
+    "department":"STATIONERY",
+    "notes":"Urgent"
+},
+{
+    "sno":10,
+    "name":"TEA POWDER",
+    "quantity":200,
+    "unit":"gm",
+    "department":"STATIONERY",
+    "notes":"Urgent"
+}
+]

@@ -1,0 +1,17 @@
+<div >  <h2 class="bg-dark text-white">Your Mini Database</h2>
+        <table class="tables table-striped">
+            <thead class="heads">
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Department</th>
+                    <th>Notes</th>
+                </tr>
+            </thead> 
+            <tbody class="tables">
+            
+            </tbody>
+        </table>
+    </div>
+    
