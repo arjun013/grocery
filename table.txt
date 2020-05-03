@@ -9,7 +9,7 @@
                     <th>Notes</th>
                 </tr>
             </thead> 
-            <tbody class="tables">
+            <tbody class="tables text-left">
             
             </tbody>
         </table>
