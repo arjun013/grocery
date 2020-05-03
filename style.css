@@ -22,12 +22,15 @@
    background: url("image/bg.jpg");
    background-size: cover;
    height: 500px;
-   animation-name: x;
-    animation-duration: 4s;
+   
 }
-.display-4{
+.displays{
+    font-size: 60px;
     margin-top: 30%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 5px 5px 10px #000;
+    animation-name: x;
+    animation-duration: 4s;
 }
 
 .bton{
@@ -41,6 +44,9 @@ height: 40px;
 border: 2px solid white;
 border-radius: 30%;
 outline: none;
+animation-name: y;
+animation-duration: 4s;
+    
 
 }
 .bton:hover{

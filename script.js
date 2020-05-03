@@ -1,3 +1,4 @@
+
 let bt=document.getElementsByClassName("bton");
 var tab=[];
 var insert=`<option value="">-select-</option>`;//for a dropdown menu if anything purchased
@@ -5,7 +6,7 @@ let replace=document.getElementsByClassName("container");
 var content="";//read json file
 var obj=[];// parsed json file
 var product;//
-var purchaseHistory="";
+var purchaseHistory="";//storing purchase history
 
 bt[0].addEventListener("click",load);//loading table format data into container
 
@@ -75,7 +76,7 @@ function writeTable(){
 
 var min;
 function amountUpdate(){//change amount selection dropdown on select product
-    document.getElementById("amount").removeAttribute("hidden")
+    document.getElementById("amount").removeAttribute("hidden","true")
     product=document.getElementById("drops").value;
     var j;
     for (let index = 0; index < obj.length; index++) {
@@ -92,18 +93,21 @@ var cells;
 
 
 function updation(){//data updation if something already buyed
-    if(document.getElementById("buyed").value!=""&&document.getElementById("drops").value!=""){ 
+    
+    let weight=parseFloat(document.getElementById("buyed").value);
+    if(document.getElementById("buyed").value!=""&&document.getElementById("drops").value!=""&&!isNaN(weight)){ 
         document.getElementById("history").removeAttribute("hidden");
         var tRow=document.getElementsByTagName("tr");
-        obj[min].quantity=obj[min].quantity-parseFloat(document.getElementById("buyed").value);
+        obj[min].quantity=obj[min].quantity-weight;
         cells=tRow[min+1].deleteCell(2);    
         cells=tRow[min+1].insertCell(2); 
         cells.innerHTML=obj[min].quantity+" "+obj[min].unit;
         document.getElementById("buyed").value ;
-        purchaseHistory=purchaseHistory+`<li><b> Purchased ${document.getElementById("buyed").value} ${obj[min].unit} of ${obj[min].name.toLowerCase()}</b> </li><hr>`;
+        purchaseHistory=purchaseHistory+`<li><b> Purchased ${weight} ${obj[min].unit} of ${obj[min].name.toLowerCase()}</b> </li><hr>`;
         document.getElementById("listing").innerHTML=purchaseHistory;
         document.getElementById("buyed").value='';
         document.getElementById("drops").value="";
+        document.getElementById("amount").setAttribute("hidden","true");
     }
 }
     

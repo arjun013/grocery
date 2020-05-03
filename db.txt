@@ -5,7 +5,7 @@
             <select name="dropdown" id="drops" class="form-control" onchange="amountUpdate();">
                 
             </select><br>
-            <div hidden id="amount">
+            <div hidden=true id="amount">
                 <h4>How much did you buy?(<span id="unit"></span>)</h4>
                 <input type="text" id="buyed" class="form-control"> <br>
                 <button type="button" class="btn btn-primary" onclick="updation();" id="sub">UPDATE</button>
